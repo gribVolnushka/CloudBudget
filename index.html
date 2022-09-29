@@ -6,15 +6,19 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter+Tight:wght@300;400;600&family=Lato:wght@300;400;700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
 
     <!-- start section Contact -->
 
-<section class="Contact">
+<section class="contact">
     <div class="container">
 
         <!-- start Text -->
@@ -34,15 +38,16 @@
 
         <!-- start Shape -->
         <div class="shape">
-            <form action="#" method="get">
-                <input type="text" name="first-name" placeholder="First Name" required>
-                <input type="text" name="last-name" placeholder="Last Name" required>
-                <input type="number" name="phone-number" placeholder="Phone Number" min="10" max="20">
-                <select name="select-service">
-                    <option value="Online-Banking">Select Service</option>
-                </select>
-                <button type="button">SUBMIT NOW</button>
-            </form>
+            <form class="form" action="#" method="get">
+                <div class="name">
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                </div>
+                <input class="function" type="number" name="phone-number" placeholder="Phone Number" min="10" max="20">
+                <input class="function" type="text" name="select" placeholder="Select Service" required>
+                <button class="form-button" type="button">SUBMIT NOW</button>
+                </div>
+            
         </div>
         <!-- end Shape -->
     </div>
@@ -52,13 +57,14 @@
 
 <!-- start Footer -->
 
-<footer>
-    <div class="container">
+<footer class="basement">
+    <div class="container row">
 
-        <!-- start Address -->
-        <section class="Address">
+
+            <!-- start Footer-col -->
+        <section class="footer-col">
             <h2>
-                <Address></Address>
+                Address
             </h2>
             <p>
                 Pipang Ltd, Griva Digeni,
@@ -66,10 +72,8 @@
                 1090 Picosia USA
             </p>
         </section>
-        <!-- end Address-->
-
-        <!-- start Services -->
-        <section class="Services">
+        
+        <section class="footer-col">
             <h2>
                 Services
             </h2>
@@ -83,28 +87,37 @@
                 </ul>
              </nav>
         </section>
-        <!-- end Services -->
-
-        <!-- start Get-touch -->
-        <section class="Get-touch">
+      
+        <section class="footer-col">
             <h2>
                 Get in Touch
             </h2>
-            <ul>
+            <ul class="link">
                 <li><a href="mailto:info@cloudbudget.com">info@cloudbudget.com</a></li>
                 <li><a href="tel:+1 844-721-7120">+1 844-721-7120</a></li>
             </ul>
+            <div class="socal-icons">
+                <a href=""><img src="image/Facebook.svg" alt=""></a>
+                <a href=""><img src="image/Instagram.svg" alt=""></a>
+                <a href=""><img src="image/Twitter.svg" alt=""></a>
+            </div>
         </section>
-        <!-- end Get-touch -->
-
-        <!-- start Support -->
-        <section class="Support">
+        
+        <section class="footer-col">
             <h2>
                 We Support
             </h2>
             <img src="image/icons.jpg" alt="icons">
         </section>
-        <!-- end Support -->
+        <section class="footer-col">
+            <p>
+                Copyright 2020 CloudBudget
+            </p>
+        </section>
+        <!-- end Footer-col -->
+        
+
+        
     </div>
 </footer>
 
