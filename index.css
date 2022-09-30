@@ -4,6 +4,98 @@ body{
 *{
     box-sizing: border-box;
 }
+.hero{
+
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), 
+                      url(image/background.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* start Header */
+header{
+    padding-top: 33px;
+    padding-bottom: 27px;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.cloud{
+    align-self: flex-start;
+}
+.logo a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    color: #FFFFFF;
+}
+.list-hero{
+    display: flex;
+    gap: 25px;
+}
+.list-hero a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: #FFFFFF;
+}
+button{
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: #FFFFFF;
+    padding: 12px 29px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    background-color: transparent;
+}
+/* end Header */
+
+/* start Hero section */
+
+.content-hero{
+    padding-top: 154px;
+    padding-bottom: 177px;
+}
+.text-hero{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: calc(86 / 72);
+    margin-bottom: 39px;
+}
+.text-hero{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 59px;
+}
+.button-hero{
+    align-self: center;
+    color: #ED4C5C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 21px 53px;
+}
+/* end Hero-section */
+
 /* start section Contact */
 .container{
     width: 1110px;
@@ -52,8 +144,6 @@ input{
 }
 .form-button{
     align-self: flex-start;
-}
-button{
     border: 1.5px solid #ED4C5C;
     border-radius: 6px;
     background-color: #ED4C5C;
@@ -62,6 +152,7 @@ button{
     color: #FFFFFF;
     padding: 22px 34px;
 }
+
 /* end section Contact */
 
 /* start Footer */
